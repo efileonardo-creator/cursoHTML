@@ -15,10 +15,12 @@ header{
     text-align: justify;
 }
 
-.enlaces{
-    padding: 10px;
-    text-align: center;
-    border-spacing: 6px;
+nav{
+    
+    display: flex;
+    justify-content: center;
+    
+
 }
 
 #inicio{
@@ -32,12 +34,59 @@ header{
 }
 
 h2{
+    text-align: center;
     font-size: 24px;
     background-color: rgb(175, 248, 39);
 }
 
 section{
     margin-top: 20px;
+}
+
+.productos{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: baseline;
+}
+
+.box { 
+    
+    width: 300px; 
+    height: auto; 
+    padding: 10px; 
+    border: 6px inset #f38d8d; 
+    margin: 20px; 
+}
+
+.item{
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+}
+
+.name{
+    text-align: left;
+    font-size: 5vw;
+    font-weight: 700;
+
+
+}
+
+.descripcion{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+}
+
+.precio{
+    text-align: right;
+    background-color: #f38d8d;
+
+}
+
+.agregaCarrito{
+    font-size: 4vw;
 }
 
 p{
@@ -92,13 +141,18 @@ footer{
 
 button{
     padding-top: 5px;
-    padding-bottom: 35px;
+    padding-bottom: auto;
     margin-bottom: 6px;
     text-align: center;
     border-radius: 6px;
-    height: 28px;
+    height: auto;
     background-color: rgb(243, 210, 64);
+    border-color: #f0a417;
     font-size: 28px;
     font-weight: 600;
     cursor: pointer;
+}
+
+button .contacto{
+    font-size: 6vw;
 }

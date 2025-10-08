@@ -12,15 +12,11 @@
     <header>
         <img id= "logo" src="./media/logo.webp" alt="Logo de Talentolab" width="150" height="100">
         <nav>
-            <table class="enlaces">
-                <th>
-                    <td><a href="#inicio">Inicio</a></td>
-                    <td><a href="#productos">Productos</a></td>
-                    <td><a href="#video"> Video</a></td>
-                    <td><a href="#contacto">Contacto</a></td>
-                </th>
-            </table>
-
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#video"> Video</a>
+            <a href="#contacto">Contacto</a>
+            
         </nav>
     </header>
 
@@ -28,17 +24,31 @@
     <main>
         <Section>
             <h2 id="productos">
-                En esta sección podes hayar los productos. 
+                Bienvenida/o a la sección de productos: 
             </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos magni accusantium minima! Nulla soluta reprehenderit odio dicta ad vitae?</p>
-
         </Section>
-        <Section>
-            <h2>
-                En esta sección podes hayar los productos. 
-            </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis tempore laboriosam. Ipsum minus quidem distinctio nostrum vitae aut cum obcaecati libero itaque, architecto impedit ex molestias, vel dignissimos dolore mollitia voluptatum corporis laborum. Maxime voluptatibus reiciendis explicabo optio autem, quasi recusandae, odio quam quod, quo reprehenderit sit quibusdam ipsa maiores? Recusandae quasi perspiciatis autem maiores nulla sit? Consectetur reiciendis suscipit quae molestiae enim doloremque ea eos temporibus minima optio est ipsa fugit modi fuga laudantium, labore, quibusdam corrupti similique autem, placeat odio? Quidem tenetur deserunt laboriosam impedit provident ea beatae esse, delectus, adipisci et tempore laborum incidunt sapiente officia?</p>
-
+        <Section class="productos">
+            <article class="box">
+                <p><img class="item" src="./media/futbol.webp" alt="pelota de futbol" ></p>
+                <p class="name">Pelota de fútbol</p>
+                <p class="descripcion">Es una hermosa pelota de cuero auténtica, utilizada para generar hermosos momentos (en la altura no dobla).</p>
+                <p class="precio">$40.000</p>
+                <p><button>Agregar al carrito</button></p>
+            </article>
+            <article class="box">
+                <p><img class="item" src="./media/golf.webp" alt="pelota de futbol" ></p>
+                <p class="name">Pelota de golf</p>
+                <p class="descripcion">Es una pelota de la mejor calidad, si la viera Tiger Woods, nos quedariamos sin stock. </p>
+                <p class="precio">$30.000</p>
+                <p><button>Agregar al carrito</button></p>
+            </article>
+            <article class="box">
+                <p><img class="item" src="./media/Tenis.webp" alt="pelota de futbol" width="200" height="200" ></p>
+                <p class="name"> Pelota de tenis. </p>
+                <p class="descripcion">Excelente pelota para sentirse que uno esta en Rolland-garros jugando la final con el mismo Nadal.</p>
+                <p class="precio">$15.000</p>
+                <p><button class="agregaCarrito">Agregar al carrito</button></p>
+            </article>
         </Section>
 
         <Section>
@@ -57,14 +67,7 @@
             </video>
             
         </section><br>
-        <nav >
-            <ul class="barranavinferior">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#video"> Video</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+
     </main>
 
     <footer id="contacto">
@@ -94,7 +97,7 @@
             </table>
         </div>
         <div>
-            <a href="./pages/contacto.html"><button>Contáctanos</button></a><br><br>
+            <a href="./pages/contacto.html"><button class="contacto">Contáctanos</button></a><br><br>
         Copyrigth2025. Todos los derechos reservados.
         </div>
 
