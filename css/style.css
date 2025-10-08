@@ -1,0 +1,104 @@
+/* Hoja de estilos*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', Tahoma, Verdana, sans-serif;
+    
+}
+
+header{
+    background: linear-gradient(to right, #90ff9f, #DBC9F5);/*linear-gradient(to right,#90ff9f,white) ;*/
+    width: 100%;
+    text-align: justify;
+}
+
+.enlaces{
+    padding: 10px;
+    text-align: center;
+    border-spacing: 6px;
+}
+
+#inicio{
+    font-family: "Oswald", "roboto", Verdana, sans-serif;
+    text-align: center;
+}
+
+
+#logo{
+    padding-left: 35%;
+}
+
+h2{
+    font-size: 24px;
+    background-color: rgb(175, 248, 39);
+}
+
+section{
+    margin-top: 20px;
+}
+
+p{
+    
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 16px;
+    background-color: rgb(237, 232, 252);
+
+}
+
+table{
+    text-align: center;
+    width: 10px;
+    font-size: 20px;
+
+}
+
+
+#video{
+    width: 100%;
+}
+
+.barranavinferior{
+    background-color: rgb(173, 238, 135);
+}
+
+.barranavinferior a{
+    color: #080808;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 2vw;
+}
+
+.maps{
+    border: black;
+    text-align: center;
+}
+
+footer{
+    background-color:  #90ff9f;;
+}
+
+.redes th{
+    font-weight: 100px;
+    width: 10px;
+    font-size: 6px;
+    text-align: left;
+
+}
+
+
+button{
+    padding-top: 5px;
+    padding-bottom: 35px;
+    margin-bottom: 6px;
+    text-align: center;
+    border-radius: 6px;
+    height: 28px;
+    background-color: rgb(243, 210, 64);
+    font-size: 28px;
+    font-weight: 600;
+    cursor: pointer;
+}
