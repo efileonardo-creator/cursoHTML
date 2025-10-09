@@ -6,22 +6,50 @@
     margin: 0;
     padding: 0;
     font-family: 'roboto', Tahoma, Verdana, sans-serif;
-    
+    justify-items: center;
 }
 
 header{
     background: linear-gradient(to right, #90ff9f, #DBC9F5);/*linear-gradient(to right,#90ff9f,white) ;*/
     width: 100%;
-    text-align: justify;
+    justify-content: center;
+    justify-items: center;
 }
+
+header p{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
 
 nav{
     
     display: flex;
     justify-content: center;
-    
+    list-style-type: none;
+} 
 
+ul li{
+    float: left;
+    margin: 15px;
+    list-style: none;
 }
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(193, 145, 238);
+    color: white;
+    border:1px, solid, #1a1717;
+    padding: 3px;
+    border-radius: 10px;
+
+}    
+
 
 #inicio{
     font-family: "Oswald", "roboto", Verdana, sans-serif;
@@ -29,9 +57,7 @@ nav{
 }
 
 
-#logo{
-    padding-left: 35%;
-}
+
 
 h2{
     text-align: center;
@@ -46,47 +72,57 @@ section{
 .productos{
     display: flex;
     justify-content: center;
-    width: 100%;
-    align-items: baseline;
+    width: 90%;
+    align-items: top;
+    margin-left: 3vw;
+    height: 90vh;
+
 }
 
 .box { 
     
-    width: 300px; 
-    height: auto; 
-    padding: 10px; 
-    border: 6px inset #f38d8d; 
-    margin: 20px; 
+    max-width: clamp(30vw, 3vw, 30px); 
+    max-height: 90vh; 
+    padding: 2vw; 
+    border: 1vw inset #f38d8d; 
+    margin: 2vw; 
 }
-
-.item{
-    width: 100%;
+ 
+.item{ /*modifica la imagen*/
+    max-width: 100%;
     height: auto;
     text-align: center;
+    background-color: #080808;
 
 }
 
 .name{
     text-align: left;
-    font-size: 5vw;
+    font-size: 3vh;
     font-weight: 700;
-
+    background-color: antiquewhite;
+    border-radius: 3px;
 
 }
 
 .descripcion{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: left;
+    font-size: 2vh;
+    background-color: rgb(245, 206, 133);
+    color: #141614;
+    border-radius: 3px;
 }
 
 .precio{
     text-align: right;
-    background-color: #f38d8d;
+    background-color:none;
+    font-size: 3vh;
 
 }
 
 .agregaCarrito{
-    font-size: 4vw;
+    font-size: 2vh;
 }
 
 p{
@@ -94,7 +130,7 @@ p{
     margin-top: 20px;
     text-align: justify;
     font-size: 16px;
-    background-color: rgb(237, 232, 252);
+    background-color: white;
 
 }
 
@@ -127,7 +163,7 @@ table{
 }
 
 footer{
-    background-color:  #90ff9f;;
+    background-color:  #90ff9f;
 }
 
 .redes th{
