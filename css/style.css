@@ -11,64 +11,41 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
   background-color: #9366fa;
 }
 
 /*estilos del encabezado*/
 
-
-
 header{
-    height: auto;
-    top: 0;
-    border-bottom: 1px solid black;
-    max-height: 55px;
-    font-size: clamp(8px, 3vw, 16px);
-
+    background: linear-gradient(to right, #0af729, #781ff5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
-h2, p {
-  margin: 10px;
-}
 
-header ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background: linear-gradient(to right, #0af729, #781ff5);
-}
 
-ul li {
-  float: left;  
-  flex-wrap: wrap;
-  
-}
+header nav {
+    display: flex;
+    list-style-type: none;
+    }
 
-ul li a {
-  display: block;
+
+
+nav a {
   color: rgb(36, 35, 35);
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px;
   text-decoration: none;
   
 }
 
-ul li a:hover {
-  border: 1px rgb(243, 134, 10);
-  border-style: outset;
-  border-radius: 10px;
+nav a:hover {
+  color: rgb(243, 57, 10);
 }
 
 
-
-.logo{
-    float: right;
-
-    
-}
 
 img{
     width: 100px;
@@ -76,6 +53,10 @@ img{
 }
 
 /* Estilos de la sección principal*/
+
+h2, p {
+    margin: 10px;
+}
 
 main{
     margin-top: 30px;
@@ -107,9 +88,8 @@ h2{
 
 
  .productos{
-    justify-content: center;
-    width: 90%;
     display: flex;
+    width: 90%;
     align-items: top;
     margin-left: 3vw;
     height: auto;
@@ -134,12 +114,13 @@ h2{
 .item{
     display: flex;
     justify-items: center;
-    margin: 35px;
-    margin-top: 10px;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 6px;
 }
  
 .imagen{ /*modifica la imagen*/
-    max-width: 90%;
+    max-width: 100%;
     width: auto;
     max-height: 150px;
     text-align: center;
@@ -208,8 +189,8 @@ h2{
 
 footer{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     overflow: hidden;
     background: black;
     display: flex;
@@ -222,26 +203,49 @@ footer{
     justify-content: space-evenly;
     border-bottom: 2px solid #97801b;
     background: linear-gradient(to right, #0af729, #781ff5);
-
+    align-items: top;
+    width: 100%;
 }
 
 .maps{
+    margin-top: 30px;
     height: 50px;
     width: 50vw;
 
 }
 
+.redes{
+    display: flex;
+    align-items: center;
+
+
+}
+
+
 
 .redes ul{
     display: flex;
     flex-direction: column;
+    gap: 20px;
+
 
 }
 
 .redes ul li{
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     list-style-type: none;
+    border: 1px dashed #c6cac7;
+    border-radius: 20px;
+    margin-top:5px;
 }
+
+.redes ul li a{
+    color: #121313;
+}
+
+
 
 .formcontacto{
     margin-top: 0px;
@@ -255,12 +259,121 @@ footer{
 .otroslinks ul{
     display: flex;
     flex-direction: column;
+    list-style-type: none;
+}
+
+.otroslinks ul li a{
+    padding: 20px;
+    font-style: oblique;
+    color: #0af729;
+    text-decoration: none;
+}
+
+.otroslinks .copyright{
+    display: flex;
+    float: right;
+    
+}
+
+.contactarcreador{
+    margin: 12px;
 
 }
 
 button{
       vertical-align: middle;
       cursor:pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+/* Condicion especial para feader con dispositivos de menos de 769px*/
+
+header{
+    background: linear-gradient(to right, #0af729, #781ff5);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+    }
+
+nav a {
+  color: rgb(36, 35, 35);
+  text-align: center;
+  padding: 2px;
+  text-decoration: none;
+  
+}
+
+
+
+/* Condicion especial para footer con dispositivos de menos de 769px*/
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: rgb(184, 72, 72);
+
+    }
+    .contenedorpie{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 2px solid #97801b;
+        background: linear-gradient(to right, #0af729, #781ff5);
+    }
+
+
+    .formcontacto{
+        margin-top: 0px;
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .maps{
+        margin-top: 30px;
+        height: 250px;
+        width: 100%;
+        
+    }
+
+    .botonesform{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .redes{
+        margin: 10px;
+    }
+
+    .redes ul{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .otroslinks{
+        display: flex;
+        color: #0af729;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+        
+        
 }
 
 
