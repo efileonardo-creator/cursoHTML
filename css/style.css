@@ -193,6 +193,17 @@ h2{
     background-color: yellowgreen;    
 }
 
+
+/*estilo del video*/
+
+.video{
+    border: 2px solid #59e66c;
+    background-color: #c424f54b;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  
+}
+
 /*estilos del pie de pagina*/
 
 footer{
@@ -200,7 +211,7 @@ footer{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: linear-gradient(to right, #0af729, #781ff5);
+    background: black;
     display: flex;
     flex-direction: column;
 }
@@ -208,7 +219,10 @@ footer{
 .contenedorpie{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #97801b;
+    background: linear-gradient(to right, #0af729, #781ff5);
+
 }
 
 .maps{
@@ -234,17 +248,20 @@ footer{
     margin: 20px;
 }
 
+.otroslinks{
+        color: #0af729;
+}
+
 .otroslinks ul{
     display: flex;
     flex-direction: column;
+
 }
 
 button{
       vertical-align: middle;
+      cursor:pointer;
 }
 
-button :hover{
-    border: 2px solid #e5f508;
-    cursor: crosshair;
-}
+
 
