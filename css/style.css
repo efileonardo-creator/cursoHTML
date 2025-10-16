@@ -181,24 +181,40 @@ h3{
     padding: 15px;
     background-color:none;
     font-size: 3vh;
-
 }
 
 .botoncompra{
     padding: 15px;
-
-
-
-
-
 }
 
 .agregaCarrito{
     position: relative;
     font-size: 2vh;
+    height: 50px;
+    width: 60px;
+    padding: 10px;
     background-color: yellowgreen;    
 }
 
+.botoncompra .textooculto{
+    display: flex;
+    position: relative;
+    visibility: hidden;
+    width: 65px;
+    height: auto;
+
+    color: rgb(34, 34, 255);
+    font-size:x-small;
+    margin: 1px;
+    padding: 1px;
+    left: -16px;
+    bottom: 57px;
+
+}
+
+.botoncompra :hover .textooculto{
+    visibility: visible;
+}
 
 /*estilo del video*/
 
@@ -280,6 +296,12 @@ footer{
     margin: 20px;
 }
 
+.botonesform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .otroslinks{
     display: flex;
     flex-direction: column;
@@ -317,17 +339,26 @@ footer{
 
 }
 
+
 .contactarcreador button{
-    width: 150px;
-    color: #f70a0a;
     background-color: #61d2f5;
-    height: 40px;
+    height: 35px;
+    width: 130px;
     border-style: groove;
 }
 
+a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 60, 255);
+    text-decoration: none;
+}
+
+
 button{
-      vertical-align: middle;
-      cursor:pointer;
+    padding: 3px;
+    vertical-align: middle;
+    cursor:pointer;
+    border-radius: 4px;
 }
 
 @media screen and (max-width: 768px) {
