@@ -55,7 +55,10 @@ img{
 /* Estilos de la sección principal*/
 
 h2, p {
-    margin: 10px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
 
 main{
@@ -79,32 +82,41 @@ h2{
 
 /*estilos de los productos*/
 
+
+h3{
+    max-width: 100%;
+    margin: 20px;
+}
+
  .principal{
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
 
  }
 
-
-
-
  .productos{
+    max-width: 100%;
     display: flex;
-    width: 90%;
-    align-items: top;
-    margin-left: 3vw;
-    height: auto;
     flex-wrap:wrap;
+    justify-content: space-between;
+    margin-right: 2px;
+    align-items: center;
+    width: 100vw;
+    height: auto;
     gap: 16px;
-    gap: 16px;
+
 
 
 }
 
 .box { 
     
-    max-width: clamp(150px, 3vw, 200px); 
+    max-width: 250px; 
     max-height: 300px; 
-    padding: 2vw; 
+    width: 200px;
+    height: 300px;
+    padding: 0px; 
     border-radius: 15px;
     border: 1vw inset #f38d8d; 
     margin: auto; 
@@ -124,6 +136,7 @@ h2{
     width: auto;
     max-height: 150px;
     text-align: center;
+    border-radius: 5px;
     background-color: #080808;
 
 }
@@ -132,6 +145,8 @@ h2{
 
     border: 2px solid #954df8;
     border-radius: 5px;
+    margin: 6px;
+
 }
 
 .name{
@@ -140,6 +155,7 @@ h2{
     font-weight: 700;
     background-color: rgb(226, 154, 59);
     border-radius: 3px;
+    padding: 5px;
 
 }
 
@@ -151,18 +167,27 @@ h2{
     color: #141614;
     border-radius: 3px;
     height: 110px;
+    padding: 5px;
+}
+
+.boxpie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .precio{
-    text-align: right;
+    padding: 15px;
     background-color:none;
     font-size: 3vh;
 
 }
 
 .botoncompra{
-    float: right;
-    position: relative;
+    padding: 15px;
+
+
 
 
 
@@ -195,6 +220,7 @@ footer{
     background: black;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .contenedorpie{
@@ -236,13 +262,15 @@ footer{
     justify-content: center;
     text-decoration: none;
     list-style-type: none;
-    border: 1px dashed #c6cac7;
-    border-radius: 20px;
     margin-top:5px;
+    border-radius: 5px;
+    background-color: #080808;
+    padding: 15px;
+    margin-bottom: 5px;
 }
 
 .redes ul li a{
-    color: #121313;
+    color: #34f80d;
 }
 
 
@@ -253,7 +281,10 @@ footer{
 }
 
 .otroslinks{
-        color: #0af729;
+    display: flex;
+    flex-direction: column;
+    color: #0af729;
+    margin-left: 20px;
 }
 
 .otroslinks ul{
@@ -262,22 +293,36 @@ footer{
     list-style-type: none;
 }
 
+.otroslinks ul li{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+
 .otroslinks ul li a{
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
     font-style: oblique;
     color: #0af729;
     text-decoration: none;
 }
 
-.otroslinks .copyright{
-    display: flex;
-    float: right;
-    
-}
 
 .contactarcreador{
+    display: flex;
+    justify-content: center;
     margin: 12px;
 
+}
+
+.contactarcreador button{
+    width: 150px;
+    color: #f70a0a;
+    background-color: #61d2f5;
+    height: 40px;
+    border-style: groove;
 }
 
 button{
@@ -362,7 +407,7 @@ nav a {
     .redes ul{
         display: flex;
         flex-direction: row;
-        gap: 50px;
+        justify-content: space-evenly;
     }
 
     .otroslinks{
